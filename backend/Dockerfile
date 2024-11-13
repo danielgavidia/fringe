@@ -5,7 +5,7 @@ FROM node:latest AS base
 WORKDIR /app
 
 # Copy the package and lock files to the working directory
-COPY ./backend/package.json ./backend/package-lock.json ./
+COPY ./package.json ./package-lock.json ./
 
 # Install prisma globally
 RUN npm install -g prisma
